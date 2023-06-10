@@ -23,7 +23,7 @@
         <img src="./img/location.svg" alt="icon location">
         <p>Colombia(Medellin, Antioquia)</p>
 
-        <a href="">Contact me</a>
+        <a href="#">Contact me</a>
     </section>
 
 
@@ -43,9 +43,37 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis, esse hic explicabo tempora similique rem temporibus incidunt, quis odio dicta? Aliquam facere sint ullam cupiditate laborum? Unde, explicabo incidunt?</p>
 
     </main>
-
+    
     <section>
-        Contacto
+        <h2>Contact</h2>
+
+        <form action="">
+            <fieldset>Contact us completing all the fields</fieldset>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name" onkeypress="return (event.charCode >= 97 && event.charCode <= 122)">
+            </div>
+
+            <div>
+
+                <label for="phone">Phone</label>
+                <input type="number" id="phone" placeholder="Phone" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                
+            </div>
+
+            <div>
+                <label for="email">Mail</label>
+                <input type="email" id="email" placeholder="Mail" 
+                onkeypress="return (event.charCode >= 48 && event.charCode <= 57 || event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 64)">
+            </div>
+
+            <div>
+                <label for="message">Mensaje</label>
+                <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+
+            <button type="submit" value="enviar">Enviar</button>
+        </form>
     </section>
 
     <footer>
