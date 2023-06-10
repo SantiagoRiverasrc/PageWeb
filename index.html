@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./normalize.css" as="style">
     <link rel="preload" href="./styles.css" as="style">
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./styles.css">
     <title>Presentation</title>
 </head>
 <body>
     <header>
-        <h1 class="title_header">Santiago Rivera Cano <span>Software Developer</span></h1>
+        <h1 class="title">Santiago Rivera Cano <span>Software Developer</span></h1>
     </header>
 
-    <nav>
-        <a href="">Start</a>
-        <a href="">Us</a>
-        <a href="">Customers</a>
-        <a href="">Contacs</a>
+    <nav class="nav_main container">
+        <a href="#">Start</a>
+        <a href="#">Us</a>
+        <a href="#">Customers</a>
+        <a href="#">Contacs</a>
     </nav>
 
     <section>
-        <h2>Develop Web and Software</h2>
+        <h2 class="title">Develop Web and Software</h2>
         <img src="./img/location.svg" alt="icon location">
         <p>Colombia(Medellin, Antioquia)</p>
 
@@ -53,28 +55,28 @@
             <fieldset>Contact us completing all the fields</fieldset>
             <div>
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Name" onkeypress="return (event.charCode >= 97 && event.charCode <= 122)">
+                <input type="text" id="name" placeholder="Name" onkeypress="return (event.charCode >= 97 && event.charCode <= 122)" required>
             </div>
 
             <div>
 
                 <label for="phone">Phone</label>
-                <input type="number" id="phone" placeholder="Phone" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                <input type="number" id="phone" placeholder="Phone" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required>
                 
             </div>
 
             <div>
                 <label for="email">Mail</label>
                 <input type="email" id="email" placeholder="Mail" 
-                onkeypress="return (event.charCode >= 48 && event.charCode <= 57 || event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 64)">
+                onkeypress="return (event.charCode >= 48 && event.charCode <= 57 || event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 64)" required>
             </div>
 
             <div>
                 <label for="message">Mensaje</label>
-                <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <textarea id="message" cols="30" rows="10" placeholder="Message" required></textarea>
             </div>
 
-            <button type="submit" value="enviar">Enviar</button>
+            <button type="submit" value="enviar">Submit</button>
         </form>
     </section>
 

@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 html{
     font-size: 62.5%;
 }
 
 body{
     font-size: 16px;
+    height: 100%;
+    font-family: 'Varela Round', sans-serif;
 }
 
 
-.title_header{
+.title{
     text-align: center;
     font-size: 2.4rem;
     
@@ -17,3 +21,60 @@ span{
     font-size: 1.3rem;
     font-weight: bold;
 }
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    height: 3rem;
+}
+
+.nav_main{
+    background-color: rgb(32, 49, 133);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_main a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.6rem;
+    transition: 0.4s;
+
+}
+
+
+
+.nav_main a:hover{
+    color: black;
+    font-weight: bold;
+    background-color: rgb(255, 238, 57);
+}
+
+
+
+
+
+
+
+@media (max-width: 500px){
+    .nav_main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .nav_main a{
+        margin: 0.7rem 0;
+        padding: 0.2rem;
+        border-radius: 0.5rem;
+    }
+}
+
+
+
+
+
+
+
