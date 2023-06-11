@@ -2,6 +2,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-snap-type: y mandatory;
 }
 
 body{
@@ -53,12 +54,232 @@ span{
 }
 
 
+.section_main{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./img/sean-pollock-PhYq704ffdA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 23.1rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    
+}
 
+.div_main{
+    text-align: center;
+    color: white;
+}
+
+
+.div_main p{
+    display: inline-block;
+}
+
+.div_main a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem;
+    background-color: rgb(32, 49, 133);
+    transition: 0.4s;
+}
+
+.div_main a:hover{
+    color: black;
+    background-color: rgb(255, 238, 57);
+    font-weight: bold;
+}
+
+
+
+
+.main_important{
+    background-color: rgb(229, 229, 229);
+    padding: 1.2rem;
+    color: white;
+}
+
+.main_important h2{
+    text-align: center;
+    color: black;
+}
+
+.main_important div h3{
+    color: rgb(39, 137, 242);
+}
+
+.container_main{
+    display: flex;
+    text-align: center;
+}
+
+
+
+.container_main img{
+    background-color: rgb(32, 49, 133);;
+    padding: 1.7rem;
+    border-radius: 50%;
+}
+
+.container_main p{
+    color: black;
+}
+
+
+
+.section_form h2{
+    text-align: center;
+}
+
+
+
+form{
+    text-align: center;
+    background-color: #161616;
+    padding: 0.6rem;
+}
+
+
+fieldset{
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+
+
+}
+
+fieldset legend{
+    color: white;
+}
+
+fieldset div{
+    padding: 0.7rem;
+}
+
+fieldset input{
+    
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: .16px;
+    border-radius: 0;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #8d8d8d;
+    background-color: #f4f4f4;
+    padding: 0 16px;
+    color: #161616;    
+}
+
+
+fieldset textarea{
+    border: none;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+}
+
+fieldset button{
+    width: auto;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+footer{
+    margin:2rem 0;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) { 
+    body{
+        font-size: 1.8rem;
+    }
+
+    .section_main{
+        padding: 0.7rem;
+    }
+
+    .div_main{
+        color: white;
+    }
+
+
+    .container_main{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    
+    fieldset input{
+    
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: .16px;
+        border-radius: 0;
+        outline: 2px solid transparent;
+        outline-offset: -2px;
+        width: 50%;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid #8d8d8d;
+        background-color: #f4f4f4;
+        padding: 0 16px;
+        color: #161616;    
+    }
+
+    fieldset textarea{
+        border: none;
+        outline: 2px solid transparent;
+        outline-offset: -2px;
+        width: 55%;
+    }
+
+
+}
 
 
 
 
 @media (max-width: 500px){
+
+
     .nav_main{
         display: flex;
         flex-direction: column;
@@ -70,6 +291,38 @@ span{
         padding: 0.2rem;
         border-radius: 0.5rem;
     }
+
+    
+
+    .div_main{
+        color: white;
+    }
+
+    fieldset input{
+    
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: .16px;
+        border-radius: 0;
+        outline: 2px solid transparent;
+        outline-offset: -2px;
+        width: 45%;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid #8d8d8d;
+        background-color: #f4f4f4;
+        padding: 0 16px;
+        color: #161616;    
+    }
+
+    fieldset textarea{
+        border: none;
+        outline: 2px solid transparent;
+        outline-offset: -2px;
+        width: 38%;
+    }
+
 }
 
 

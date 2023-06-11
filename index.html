@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/iconoweb.svg" type="image/x-icon">
     <link rel="preload" href="./normalize.css" as="style">
     <link rel="preload" href="./styles.css" as="style">
     <link rel="stylesheet" href="./normalize.css">
@@ -22,66 +23,85 @@
         <a href="#">Contacs</a>
     </nav>
 
-    <section>
-        <h2 class="title">Develop Web and Software</h2>
-        <img src="./img/location.svg" alt="icon location">
-        <p>Colombia(Medellin, Antioquia)</p>
-
-        <a href="#">Contact me</a>
+    <section class="section_main">
+        <div class="div_main">
+            <h2 class="title">Develop Web and Software</h2>
+            <img src="./img/location.svg" alt="icon location">
+            <p>Colombia(Medellin, Antioquia)</p>
+            <br>
+            <a href="https://www.linkedin.com/in/santiago-rivera-10abvc/" target="_blank" rel="noopener">Contact me</a>
+        </div>
     </section>
 
 
-    <main>
+    <main class="main_important">
         <h2>My Services</h2>
-        
-        <h3>Develop Web</h3>
-        <img src="./img/window.svg" alt="icon window">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A reiciendis asperiores consequatur iusto quia voluptatibus delectus culpa voluptates consequuntur ipsum ratione doloremque est voluptatem, tempore eveniet maiores consectetur odio dolorem.</p>
-    
-        <h3>Develop APIS</h3>
-        <img src="./img/api.svg" alt="icon api">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil provident praesentium iusto sint! Nemo vitae enim in a modi delectus veniam quaerat quisquam rerum illo. Amet corrupti dolore tenetur? Atque.</p>
-    
-        <h3>Deploy</h3>
-        <img src="./img/deploy.svg" alt="icon deploy">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis, esse hic explicabo tempora similique rem temporibus incidunt, quis odio dicta? Aliquam facere sint ullam cupiditate laborum? Unde, explicabo incidunt?</p>
+        <section class="container_main">
+            <div>
+                <h3>Develop Web</h3>
+                <img src="./img/window.svg" alt="icon window">
+                <p>development of applications web using html, css, sass, Bootstrap, JavaScript and asp.net Core.</p>
+            </div>
+
+            <div>
+                <h3>Develop APIS</h3>
+                <img src="./img/api.svg" alt="icon api">
+                <p>development of apis with technologies like C# Api web(API REST) and authentication.</p>
+            </div>
+            <div>
+                <h3>Deploy</h3>
+                <img src="./img/deploy.svg" alt="icon deploy">
+                <p>deployment of applications web using Docker with Vercel or Netlify and their domains.</p>
+            </div>
+        </section>
 
     </main>
 
-    <section>
+    <section class="section_form">
         <h2>Contact</h2>
 
         <form action="">
-            <fieldset>Contact us completing all the fields</fieldset>
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Name" onkeypress="return (event.charCode >= 97 && event.charCode <= 122)" required>
-            </div>
+            <fieldset>
+                <legend>Contact us completing all the fields</legend>
+                <div>
 
-            <div>
-
-                <label for="phone">Phone</label>
-                <input type="number" id="phone" placeholder="Phone" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required>
+                    <input type="text" id="name" placeholder="Name" onkeypress="return (event.charCode >= 97 && event.charCode <= 122)" required>
+                </div>
+    
+                <div>
+    
+                    
+                    <input type="number" id="phone" placeholder="Phone" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required>
+                    
+                </div>
+    
+                <div>
+        
+                    <input type="email" id="email" placeholder="Mail" 
+                    onkeypress="return (event.charCode >= 48 && event.charCode <= 57 || event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 64)" required>
+                </div>
+    
+                <div>
+                    <textarea id="message" cols="120" rows="5" placeholder="Message" required></textarea>
+                </div>
                 
-            </div>
+                <div>
+                    <button type="submit" value="enviar">Submit</button>
+                </div>
 
-            <div>
-                <label for="email">Mail</label>
-                <input type="email" id="email" placeholder="Mail" 
-                onkeypress="return (event.charCode >= 48 && event.charCode <= 57 || event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 64)" required>
-            </div>
-
-            <div>
-                <label for="message">Mensaje</label>
-                <textarea id="message" cols="30" rows="10" placeholder="Message" required></textarea>
-            </div>
-
-            <button type="submit" value="enviar">Submit</button>
+            </fieldset>
         </form>
     </section>
 
     <footer>
         All rights reserved to Santiago Rivera Cano
+        <br>
+        <a href="https://github.com/SantiagoRiverasrc" target="_blank" rel="noopener">
+            <img src="./img/github.svg" alt="icon github">
+        </a>
+        <a href="https://www.linkedin.com/in/santiago-rivera-10abvc/" target="_blank" rel="noopener">
+            <img src="./img/linkedin.svg" alt="icon likedin">
+        </a>
     </footer>
 </body>
 </html>
