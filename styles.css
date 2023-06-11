@@ -50,7 +50,7 @@ span{
 .nav_main a:hover{
     color: black;
     font-weight: bold;
-    background-color: rgb(255, 238, 57);
+    background-color: white;
 }
 
 
@@ -86,7 +86,7 @@ span{
 
 .div_main a:hover{
     color: black;
-    background-color: rgb(255, 238, 57);
+    background-color: white;
     font-weight: bold;
 }
 
